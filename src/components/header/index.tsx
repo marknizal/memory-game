@@ -25,13 +25,14 @@ const Header: FC<T.HeaderProps> = ({
       <S.Controls>
         <Space size={24}>
           <time>
-            <h3>Time: {formatTime(time)}</h3>
+            <h2>Time: {formatTime(time)}</h2>
           </time>
-          <h3>Moves: {moves}</h3>
+          <h2>Moves: {moves}</h2>
         </Space>
 
         <Space>
           <Select
+            aria-label="Difficulty"
             value={difficulty}
             onChange={onDifficultyChange}
             style={{ width: 105 }}

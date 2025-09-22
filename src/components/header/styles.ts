@@ -34,7 +34,7 @@ export const Controls = styled.section`
   gap: 2rem;
   background-color: ${COLOR.white};
 
-  h3 {
+  h2 {
     font-size: ${FONTSIZE.base};
     font-weight: 500;
   }

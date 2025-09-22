@@ -1,12 +1,17 @@
-import GameBoard from "../container";
-import Footer from "../components/footer";
+import { lazy, Suspense } from "react";
+import { Main, Loader } from "../components/shared";
+
+const GameBoard = lazy(() => import("../container"));
+const Footer = lazy(() => import("../components/footer"));
 
 const Homepage = () => {
   return (
-    <main style={{ display: "block" }}>
-      <GameBoard />
-      <Footer />
-    </main>
+    <Main>
+      <Suspense fallback={<Loader />}>
+        <GameBoard />
+        <Footer />
+      </Suspense>
+    </Main>
   );
 };
 
