@@ -22,11 +22,11 @@ export const BREAKPOINT = {
 };
 
 export const COLOR = {
-  primary: "#1877F2",
+  primary: "#1DA1F2",
   white: "#FFFFFF",
   black: "#000000",
   grey: "#CCCCCC",
 
   transparent: "rgba(0,0,0,0)",
-  background: "#F2F4F7",
+  background: "linear-gradient(to bottom, #fff1eb 0%, #ace0f9 100%)",
 };
