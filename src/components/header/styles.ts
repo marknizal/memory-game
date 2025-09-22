@@ -12,6 +12,15 @@ export const Wrapper = styled.header`
   background-color: ${COLOR.white};
   width: 100%;
 
+  img {
+    width: 2rem;
+  }
+
+  h1 {
+    font-size: ${FONTSIZE.lg};
+    color: ${COLOR.primary};
+  }
+
   ${BREAKPOINT.mobile} {
     flex-direction: column;
     padding: 2rem;

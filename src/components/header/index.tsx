@@ -1,4 +1,6 @@
 import type { FC } from "react";
+import Logo from "../../assets/brain.png";
+
 import { Button, Space, Select } from "antd";
 import { LuUndo } from "react-icons/lu";
 
@@ -15,7 +17,10 @@ const Header: FC<T.HeaderProps> = ({
 }) => {
   return (
     <S.Wrapper>
-      <h1>Memory Game</h1>
+      <Space>
+        <img src={Logo} alt="Memory Game by Mark Nizal" />
+        <h1>Memory Game</h1>
+      </Space>
 
       <S.Controls>
         <Space size={24}>
@@ -37,7 +42,12 @@ const Header: FC<T.HeaderProps> = ({
             ]}
           />
 
-          <Button icon={<LuUndo />} onClick={onReset}>
+          <Button
+            icon={<LuUndo />}
+            onClick={onReset}
+            color="danger"
+            variant="solid"
+          >
             Reset
           </Button>
         </Space>
