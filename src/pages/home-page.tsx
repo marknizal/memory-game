@@ -1,7 +1,13 @@
 import GameBoard from "../container";
+import Footer from "../components/footer";
 
 const Homepage = () => {
-  return <GameBoard />;
+  return (
+    <main style={{ display: "block" }}>
+      <GameBoard />
+      <Footer />
+    </main>
+  );
 };
 
 export default Homepage;

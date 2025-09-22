@@ -13,8 +13,13 @@ export const Wrapper = styled.section`
 
   h1 {
     font-size: ${FONTSIZE.lg};
+  }
 
-    ${BREAKPOINT.mobile} {
+  ${BREAKPOINT.mobile} {
+    flex-direction: column-reverse;
+    padding-top: 12rem;
+
+    h1 {
       font-size: ${FONTSIZE.xl};
     }
   }
@@ -54,6 +59,10 @@ export const Card = styled.figure<{ $gridSize: number }>`
         : props.$gridSize === 4
         ? "4.5rem"
         : "3rem"};
+
+    svg {
+      font-size: ${FONTSIZE.md};
+    }
   }
 `;
 

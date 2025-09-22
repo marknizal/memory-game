@@ -34,7 +34,7 @@ const Header: FC<T.HeaderProps> = ({
           <Select
             value={difficulty}
             onChange={onDifficultyChange}
-            style={{ width: 110 }}
+            style={{ width: 105 }}
             options={[
               { value: "Beginner", label: "Beginner" },
               { value: "Easy", label: "Easy" },

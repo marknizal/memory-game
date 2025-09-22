@@ -1,16 +1,16 @@
-import { type FC, useState, useEffect, useRef } from "react";
-import { FaStar } from "react-icons/fa";
+import { type FC, useEffect, useRef, useState } from "react";
 import { message } from "antd";
-
-import * as S from "./styles";
-import * as T from "./types";
+import { FaStar } from "react-icons/fa";
 
 import Header from "../components/header";
-import Status from "../components/status";
 import Scores from "../components/scores";
+import Status from "../components/status";
 
 import { formatTime, formatTimeWords } from "../utils/formatTime";
 import { getDisplayName } from "../utils/getName";
+
+import * as S from "./styles";
+import * as T from "./types";
 import { images } from "./data";
 
 const GameBoard: FC = () => {

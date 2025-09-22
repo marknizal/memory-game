@@ -11,6 +11,7 @@ export const Wrapper = styled.header`
   padding: 1rem 2rem;
   background-color: ${COLOR.white};
   width: 100%;
+  z-index: 1000;
 
   img {
     width: 2rem;
@@ -23,7 +24,6 @@ export const Wrapper = styled.header`
 
   ${BREAKPOINT.mobile} {
     flex-direction: column;
-    padding: 2rem;
   }
 `;
 
