@@ -1,4 +1,4 @@
-import GameBoard from "../game-board";
+import GameBoard from "../container";
 
 const Homepage = () => {
   return <GameBoard />;
