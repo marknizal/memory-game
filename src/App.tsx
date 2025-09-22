@@ -1,5 +1,12 @@
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRoutes from "./routes/app-routes";
+
 function App() {
-  return <h1>Memory Game</h1>;
+  return (
+    <Router>
+      <AppRoutes />
+    </Router>
+  );
 }
 
 export default App;
