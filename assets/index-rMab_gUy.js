@@ -1,0 +1,1 @@
+const e={sm:"0.5rem",base:"1rem"},r={xs:"0.8rem",base:"1rem",md:"1.25rem",lg:"1.5rem",xl:"1.75rem"},a={mobile:"@media only screen and (max-width: 767px)"},m={primary:"#1DA1F2",white:"#FFFFFF",grey:"#CCCCCC",background:"linear-gradient(to bottom, #fff1eb 0%, #ace0f9 100%)"};export{a as B,m as C,r as F,e as R};
