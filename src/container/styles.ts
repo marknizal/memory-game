@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { COLOR, FONTSIZE, RADIUS, BREAKPOINT } from "../styles";
 
 export const Wrapper = styled.section`
-  min-height: 100dvh;
+  min-height: 100vh;
   background: ${COLOR.background};
   display: flex;
   flex-direction: column;

@@ -1,6 +1,7 @@
 export type CardType = {
-  id: number;
+  id: string;
   src: string;
+  name: string;
   flipped: boolean;
   matched: boolean;
 };

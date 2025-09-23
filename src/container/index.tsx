@@ -7,7 +7,6 @@ import Scores from "../components/scores";
 import Status from "../components/status";
 
 import { formatTime, formatTimeWords } from "../utils/formatTime";
-import { getDisplayName } from "../utils/getName";
 
 import * as S from "./styles";
 import * as T from "./types";
@@ -45,9 +44,10 @@ const GameBoard: FC = () => {
     const { pairs } = T.difficultyConfig[level];
     const selectedImages = images.slice(0, pairs);
     return [...selectedImages, ...selectedImages]
-      .map((src) => ({
-        id: Math.random(),
-        src,
+      .map((img) => ({
+        id: crypto.randomUUID(),
+        src: img.src,
+        name: img.name,
         flipped: false,
         matched: false,
       }))
@@ -110,14 +110,13 @@ const GameBoard: FC = () => {
 
     setDisabled(true);
 
-    if (firstChoice.src === secondChoice.src) {
-      const name = getDisplayName(firstChoice.src);
+    if (firstChoice.name === secondChoice.name) {
       setCards((prev) =>
         prev.map((c) =>
-          c.src === firstChoice.src ? { ...c, matched: true } : c
+          c.name === firstChoice.name ? { ...c, matched: true } : c
         )
       );
-      setStatusMessage(`Yay! You found ${name}!`);
+      setStatusMessage(`Yay! You found ${firstChoice.name}!`);
       resetTurn();
     } else {
       setStatusMessage("Oops, not a match. Try again!");
@@ -205,7 +204,7 @@ const GameBoard: FC = () => {
           {cards.map((card) => {
             const label =
               card.flipped || card.matched
-                ? `Card showing ${getDisplayName(card.src)}`
+                ? `Card showing ${card.name}`
                 : "Hidden card";
 
             return (
@@ -232,7 +231,7 @@ const GameBoard: FC = () => {
                   <S.Back>
                     <S.Object
                       src={card.src}
-                      alt={`Picture of ${getDisplayName(card.src)}`}
+                      alt={`Picture of ${card.name}`}
                       loading="lazy"
                     />
                   </S.Back>
