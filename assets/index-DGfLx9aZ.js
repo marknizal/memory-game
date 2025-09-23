@@ -1,4 +1,4 @@
-import{ai as t,aj as e}from"./index-CqUksjwL.js";import{C as r,F as o}from"./index-rMab_gUy.js";const s=t.footer`
+import{ai as t,aj as e}from"./index-DYLNZMLv.js";import{C as r,F as o}from"./index-rMab_gUy.js";const s=t.footer`
   display: flex;
   gap: 1rem;
   background-color: ${r.primary};
