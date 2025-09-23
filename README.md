@@ -1,6 +1,8 @@
 # 🧠 Memory Game
 
-Memory Game is a web-based matching game built with modern frontend tech. The goal is simple: flip cards / tiles two at a time, try to find matching pairs. If you pick a pair that matches, they stay revealed. If they don’t match, they flip back. The challenge is remembering where the matching cards are among the face-down ones. It’s often timed (or counts moves), giving both a fun and mental workout testing short-term memory, concentration, and pattern recognition.
+Memory Game is a web-based matching game built with modern frontend tech. The goal is simple: flip cards / tiles two at a time, try to find matching pairs. If you pick a pair that matches, they stay revealed. If they don’t match, they flip back.
+
+The challenge is remembering where the matching cards are among the face-down ones. It’s often timed (or counts moves), giving both a fun and mental workout testing short-term memory, concentration, and pattern recognition.
 
 ---
 
